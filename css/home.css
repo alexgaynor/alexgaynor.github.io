@@ -1,0 +1,150 @@
+/* COLORS TO CHOOSE FROM #4DABA9, #B5D9E2, #5792AF, #B3D2CD */
+/* THEIR DESCRIPTIONS ARE darkTeal, sky blue, dark blue, grey blue */
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Share+Tech|Tangerine|Baumans|Lobster|Pacifico|Oxygen|Arimo|Lato|Dancing+Script);
+
+
+html {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	/*background:#4DABA9;*/
+}
+
+/* ALIGNMENT CLASSES */
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+/* HEADER STYLING */
+#header-wrap {
+	width:100%;
+	height:100px;
+	background:#5792AF;
+}
+#header-cont {
+	width:1100px;
+	height:100%;
+	margin:auto;
+}
+#icon {
+	color:white;
+	font-size:60px;
+	width:80px;
+	display: inline-block;
+	text-align: center;
+	height: 100%;
+	line-height: 105px;
+	margin-left:135px;
+}
+
+#my-name {
+	font-family:Lato;
+	font-size:60px;
+	font-weight:600;
+	color:white;
+	font-variant: small-caps;
+	line-height: 90px;
+	letter-spacing: 3px;
+	padding-left: 10px;
+}
+.menu-item {
+	font-family:Lato;
+	height:100%;
+	color:white;
+	padding-right:10px;
+	padding-left:10px;
+	font-size:20px;
+	letter-spacing: 1px;
+	font-variant: small-caps;
+	line-height: 100px;
+}
+
+/* BODY STYLING */
+/* COLORS TO CHOOSE FROM #4DABA9, #B5D9E2, #5792AF, #B3D2CD */
+/* THEIR DESCRIPTIONS ARE darkTeal, sky blue, dark blue, grey blue */
+.light-blue {
+	background: #B3D2CD;
+}
+.white-gloss {
+	background: #f1f4f6;
+}
+.main-section-wrap {
+	width:100%;
+	height:550px;
+	/*border-top:1px solid red;*/
+	/*border-bottom:1px solid red;*/
+	/*background: #f1f4f6;*/
+}
+.main-section-cont {
+	height:100%;
+	width:1100px;
+	margin:auto;
+	/*border-right:1px solid navy;*/
+	/*border-left:1px solid navy;*/
+}
+.focus-circle {
+	width:300px;
+	height:300px;
+	border-radius:100%;
+	border:7px solid #4DABA9;
+	display:inline-block;
+	/*background:#B5D9E2;*/
+	/*float:left;*/
+	/*margin-left:45px;*/
+	margin-top:40px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 10px -2px #202020;
+}
+.focus-circle-background {
+	width:100%;
+	height:100%;
+	opacity:.5;
+	border-radius:100%;
+	background:#B5D9E2;
+	-webkit-box-shadow: inset 0px 0px 20px -4px #202020;
+}
+.left-circle {
+	float:left;
+	margin-left:38px;
+}
+.right-circle {
+	float:right;
+	margin-right:38px;
+}
+.center-circle {
+	margin-left:38px;
+	margin-right:38px;
+}
+#scientist {
+	background:url('../images/atom.png') center;
+	background-size: 90% 90%;
+	background-repeat: no-repeat;
+}
+#musician {
+	background:url('../images/speaker.png') center;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+#athlete {
+	background:url('../images/football.png') center;
+	background-size: 95% 55%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
