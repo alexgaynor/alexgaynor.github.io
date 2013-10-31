@@ -180,7 +180,7 @@ body {
 .focus-circle-text {
 	color:black;
 	font-size:150px;
-	z-index:10000;
+	/*z-index:10000;*/
 	text-align: center;
 	position:absolute;
 	top:70px;

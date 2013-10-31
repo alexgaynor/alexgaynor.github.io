@@ -24,6 +24,7 @@ app.AppView = Backbone.View.extend({
     }, this); // "this" is the context in the callback
 
     // Returning the object is a good practice so we can do chaining
+    // console.log(app);
     return this;
   }
 

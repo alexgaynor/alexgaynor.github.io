@@ -4,6 +4,10 @@ app.PostListView = Backbone.View.extend({
   // This is the tag type that each of our post titles will be nested under
   tagName: 'li',
 
+  events: {
+    'click': 'view'
+  },
+
   // this function is called when the object is created
   initialize: function() {
   },
@@ -19,5 +23,9 @@ app.PostListView = Backbone.View.extend({
 
     // Returning the object is a good practice so we can do chaining
     return this;
+  },
+  view: function() {
+    app.router.navigate('posts/' + this.model.get('slug'), true);
   }
+
 });
