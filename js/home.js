@@ -45,7 +45,6 @@ function leftBoxAnimate(left, mid, right, text) {
 
 
 function midBoxOpen(left, leftImg, mid, right, textL, textR) {
-    leftImg.fadeOut(200);
     left.animate({
         width: '0px'
     }, { duration: 800, queue: false });
@@ -57,25 +56,22 @@ function midBoxOpen(left, leftImg, mid, right, textL, textR) {
         'margin-left': '0px',
         'width': '1140px'
     }, { duration: 820, queue: false });
-    textL.fadeIn();
-    textR.fadeIn();
+    textL.delay(900).fadeIn();
+    textR.delay(900).fadeIn();
 }
 function midBoxClose(left, leftImg, mid, right, textL, textR) {
-    mid.animate({
+    textL.fadeOut();
+    textR.fadeOut();
+    mid.delay(200).animate({
         width: '350px',
         'margin-left': '45px'
     }, { duration: 800, queue: false });
-    left.animate({
+    left.delay(200).animate({
         width: '350px'
     }, { duration: 800, queue: false });
-    right.animate({
+    right.delay(200).animate({
         width: '350px'
-    }, { duration: 800, queue: false }, function () {
-        leftImg.fadeIn(200);
-        textL.fadeOut();
-        textR.fadeOut();
-    });
-
+    }, { duration: 800, queue: false });
 }
 function midBoxAnimate(left, leftImg, mid, right, textL, textR) {
     if (mid.css('width') === '350px') {
@@ -86,7 +82,6 @@ function midBoxAnimate(left, leftImg, mid, right, textL, textR) {
         return false;
     };
 }
-
 function rightBoxOpen (left, mid, right, text) {
     left.fadeOut(300);
     mid.fadeOut(400);
@@ -138,6 +133,8 @@ $(document).ready(function () {
     var pdTextR = $('#ta-details-right');
     var mvTextL = $('#gf-details-left');
     var mvTextR = $('#gf-details-right');
+
+    var planetaryLink = $('#planetary-link');
 
     myName.click(function () {
         bod.animate({
