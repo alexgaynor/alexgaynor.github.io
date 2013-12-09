@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alex Gaynor</title>
+		<link type="text/css" rel="stylesheet" href="css/home.css" />
+
+		<link type="text/css" rel="stylesheet" href="css/base.css" />
+		<link type="text/css" rel="stylesheet" href="css/layout.css" />
+		<link type="text/css" rel="stylesheet" href="css/skeleton.css" />
+
+
+	</head>
+	<body>
+		<div id="header-wrap">
+			<div id="header-cont">
+				<div id="my-name" class="left">Alex Gaynor</div>
+				<div id="icon" class="center">&Phi;</div>
+				<div id="menu" class="right">
+					<div id="about-me" class="menu-item left">About Me</div>
+					<div id="my-work" class="menu-item left">My Work</div>
+					<div id="blog" class="menu-item left">Blog</div>
+					<div id="contact" class="menu-item left">Contact</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-body" class="sub-main-section-wrap white-gloss">
+			<div class="sub-main-section-cont">
+				<!-- <div id="developer" class="focus-circle"></div> -->
+				<div class="container">
+					<div class="focus-wrap one-third column">
+						<div id="scientist" class="focus-circle">
+							<div class="focus-circle-background"></div>
+						</div>
+						<div id="scientist-label" class="focus-label">Scientist<div class="divider"></div></div>
+					</div>
+					<div class="focus-wrap one-third column">
+						<div id="musician" class="focus-circle">
+							<div class="focus-circle-background"></div>
+						</div>
+						<div id="musician-label" class="focus-label">Musician<div class="divider"></div></div>
+					</div>
+					<div class="focus-wrap one-third column">
+						<div id="developer" class="focus-circle">
+							<div class="focus-circle-background"></div>
+							<div class="focus-circle-text">&#60;/&#62;</div>
+						</div>
+						<div id="developer-label" class="focus-label">Developer<div class="divider"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-section-wrap light-blue">
+			<div id="about-me" class="main-section-cont">
+				<div id="mypic">
+
+				</div>
+				<div id="top-info" class="info">
+					some shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitch
+				</div>
+				<div id="bottom-info" class="info">
+					some shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitchsome shit about me bitch
+				</div>
+			</div>
+		</div>
+		<div class="main-section-wrap white-gloss">
+			<div id="my-work" class="main-section-cont">
+				<div id="work-cont" class="container">
+					<div id="row1" class="work-row">
+						<div id="sigma" class="work-box left">
+							<div id="sigimg" class="placeholder-left">&#931;</div>
+							<div class="work-details">Sigma, the eighteenth letter in the greek alphabet, is used to denote the summation of the numbers or quantities indicated.</div>
+						</div>
+						<div id="pd" class="work-box center-box">
+
+						</div>
+						<div id="gf" class="work-box right">
+
+						</div>
+					</div>
+					<div id="row2" class="work-row container">
+						<div id="banc" class="work-box left">
+							<div id="b-r" class="work-img"></div>
+						</div>
+						<div id="mv" class="work-box center-box">
+
+						</div>
+						<div id="psi" class="work-box right">
+							<div id="psiImg" class="placeholder-right">&#936;</div>
+							<!-- <div class="definition">Psi, the twentythird letter in the greek alphabet, represents a wavefunction in Quantum Mechanics, which describes the quantum state of a particle.</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-section-wrap darker-blue">
+			<div id="blog" class="main-section-cont container">
+				<script id="app-view-template" type="text/x-handlebars-template">
+					<h1>Recent Posts</h1>
+					<ul id="posts"></ul>
+				</script>
+				<script id="post-list-view-template" type="text/x-handlebars-template">
+		    		{{title}}
+		 		</script>
+				<script id="post-view-template" type="text/x-handlebars-template">
+					<a id="back-link" href="index.html">&larr; Back</a>
+					<div class="post">
+						<h1 class="title">{{title}}</h1>
+						<h3 class="slug">{{slug}}</h3>
+						<div class="content">{{{content}}}</div>
+					</div>
+				</script>
+				<div id="main">
+				</div>
+			</div>
+		</div>
+		<div class="main-section-wrap white-gloss">
+			<div id="contacttype="text/javascript"" class="main-section-cont">
+
+
+			</div>
+		</div>
+		<div id="footer-wrap" class="light-blue">
+			<div id="footer-cont">
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/handlebars.js"></script>		  
+		<script type="text/javascript" src="js/backbone/models/Post.js"></script>
+		<script type="text/javascript" src="js/backbone/collections/PostList.js"></script>
+		<script type="text/javascript" src="js/backbone/views/AppView.js"></script>
+		<script type="text/javascript" src="js/backbone/views/PostListView.js"></script>
+		<script type="text/javascript" src="js/backbone/views/PostView.js"></script>
+		<script type="text/javascript" src="js/backbone/routers/Router.js"></script>
+		<script type="text/javascript" src="js/backbone/app.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/raphael.js"></script>
+
+		<!--<script type="text/javascript" src="js/animate.js"></script>-->
+		<script type="text/javascript" src="js/home.js"></script>
+	</body>
+</html>

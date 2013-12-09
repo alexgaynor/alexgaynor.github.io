@@ -19,13 +19,18 @@ body {
 	padding:0;
 	/*background:#4DABA9;*/
 }
-
 /* ALIGNMENT CLASSES */
 .left {
 	float:left;
 }
 .right {
 	float:right;
+}
+.center {
+	margin:auto;
+}
+.clear {
+	clear:both;
 }
 
 /* PLAY WITH THE COLOR OF THE DIVIDER *** CURRENTLY SET TO THE BORDER OF THE FOCUS BORDER  */
@@ -78,7 +83,7 @@ body {
 	color:white;
 	padding-right:10px;
 	padding-left:10px;
-	font-size:20px;
+	font-size:22px;
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	line-height: 100px;
@@ -126,6 +131,7 @@ body {
 	height:100%;
 	width:1140px;
 	margin:auto;
+	position: relative;
 	/*border-right:1px solid navy;*/
 	/*border-left:1px solid navy;*/
 }
@@ -179,14 +185,15 @@ body {
 }
 .focus-circle-text {
 	color:black;
-	font-size:150px;
+	font-size:130px;
 	/*z-index:10000;*/
 	text-align: center;
 	position:absolute;
-	top:70px;
-	left:40px;
+	top:20px;
+	left:20px;
 	letter-spacing: 10px;
-	opacity:.5;
+	opacity:.4;
+
 }
 /*.left-circle {
 	float:left;
@@ -213,8 +220,348 @@ body {
 /*#athlete {
 	background:url('../images/football.png') center;
 	background-size: 95% 55%;
+
 	background-repeat: no-repeat;
 }*/
+#blog {
+	color:#f1f4f6;
+}
+#blog h1 {
+	color:#f1f4f6;
+}
+#footer-wrap {
+	width:100%;
+	height:475px;
+	z-index:10;
+}
+#work-cont {
+	/*width: 1100px;*/
+	/*height:850px;*/
+	/*margin:auto;*/
+	/*margin-top:50px;*/
+	/*border:1px solid black;*/
+	/*position: absolute;*/
+	padding-top:85px;
+	/*padding-left:4px;*/
+}
+
+.work-row {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height:400px;
+	width:1140px;
+	
+}
+
+
+.work-box {
+	background:#B5D9E2;
+	height:350px;
+	width:350px;
+	margin-top:15px;
+	margin-bottom:15px;
+	/*margin-right:12px;*/
+	/*margin-left:12px;*/
+	border-radius: 6px;
+	position:relative;
+	display:inline-block;
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.placeholder-left {
+	color:white;
+	width:305px;
+	height:330px;
+	font-size:360px;
+	text-align: center;
+	position:absolute;
+	left:22.5px;
+}
+.placeholder-right {
+	color:white;
+	width:305px;
+	height:330px;
+	font-size:360px;
+	text-align: center;
+	position:absolute;
+	right:22.5px;
+}
+
+.definition {
+	width:90%;
+	height:30px;
+	text-align: left;
+	margin-top:0;
+	margin:auto;
+	font-size: 16px;
+
+}
+
+.work-img {
+	width:305px;
+	height:305px;
+	margin:auto;
+	margin-top:22.5px;
+}
+.center-work-img {
+	width:305px;
+	height:305px;
+	margin:auto;
+	margin-top:22.5px;
+}
+.work-details {
+	display:none;
+	width:700px;
+	height:290px;
+	
+	/*border:1px solid black;*/
+	margin-top:30px;
+	color:white;
+	font-size: 22px;
+	font-family: Lato;
+}
+.work-details h2 {
+	color:white;
+	font-weight: 600;
+	font-size: 42px;
+	letter-spacing: 1px;
+	font-family: Lato;
+}
+.work-details p {
+	line-height: 24px;
+	padding-bottom:10px;
+}
+.details-right {
+	float:right;
+	margin-right:350px;
+}
+.details-left {
+	margin-left:350px;
+}
+.center-details-left {
+	width:305px;
+	height:305px;
+	float:left;
+	display:none;
+	margin-left:50px;
+	margin-top:-305px;
+}
+.center-details-right {
+	width:305px;
+	height:305px;
+	float:right;
+	display:none;
+	margin-top:-305px;
+	margin-right:50px;
+
+}
+
+
+
+#math-ex {
+	width:450px;
+	height:50px;
+	background-image:url('../images/sigma-pic1.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+
+}
+
+
+
+.center-box {
+	margin-left:45px;
+	/*left:20%;*/
+	/*position:absolute;*/
+	/*margin: auto;*/
+	/*float:left;*/
+
+}
+
+
+
+
+#grid-cont {
+	margin-left:5px;
+	padding-top:115px;
+}
+.info {
+	text-align: left;
+	font-size:20px;
+	line-height: 22px;
+	font-family: Lato;
+	/*margin-top: 50px;*/
+	float:left;
+	display:inline-block;
+	width:350px;
+	height:350px;
+	/*border:5px solid #B3D2CD;*/
+	margin:5px 5px 5px 5px;
+	overflow: hidden;
+	background:white;
+	border:8px solid white;
+	-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+}
+#gear-spin i {
+	font-size: 350px;
+	margin-left:25px;
+}
+.info-text {
+	padding-top:30px;
+}
+.info-pic {
+	width:334px;
+	height:334px;
+	width:100%;
+	height:100%;
+}
+.technologies-list {
+	width:100%;
+	height:100%;
+	margin-left:5px;
+	margin-top:15px;
+	padding:0;
+}
+.technologies-list li {
+	font-size: 30px;
+	display: inline-block;
+	padding-top:10px;
+	padding-left:12px;
+	padding-right:12px;
+	width:60px;
+	height:60px;
+}
+/*#top-info {
+	width:400px;
+	height:300px;
+	border:5px solid white;
+	position:absolute;
+	right:200px;
+}
+#bottom-info {
+	width:800px;
+	height:200px;
+	border:5px solid white;
+	position:absolute;
+	bottom:40px;
+}*/
+
+
+
+.contact-footer {
+	height:300px;
+}
+#quote {
+	width:300px;
+	padding-top:70px;
+	float:left;
+	display:inline-block;
+	margin-left:20px;
+	color:white;
+	font-size:24px;
+	font-family:Lato;
+	font-variant: small-caps;
+	line-height: 28px;
+
+}
+#myFace {
+	width:270px;
+	height:270px;
+	border:6px solid white;
+	border-radius: 100%;
+	float: left;
+	display: inline-block;
+	margin-left: 125px;
+	margin-top:9px;
+	background-image: url('../images/myface.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#contact-icons-cont {
+	width:400px;
+	height:250px;
+	float:right;
+	margin-right:-45px;
+	margin-top:28px;
+}
+.icon-list {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.icon-list li {
+	display: inline-block;
+	width:180px;
+	height:130px;
+	font-size: 60px;
+	text-align: center;
+	/*background:white;*/
+	padding:0;
+	margin:0;
+}
+.icon-list li a i {
+	color:white;
+}
+
+#t-all {
+	background: white;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#plan-d {
+	background-image:url('../images/planetarydefendr.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position:absolute;
+	right:22.5px;
+}
+#g-f {
+	background:url('../images/gameface.png');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+#b-r {
+	background-image: url('../images/banc.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position:absolute;
+	left:22.5px;
+	
+}
+#m-v {
+	background-image: url('../images/muzik.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* THE NEXT SMALLEST SCREEN SIZE STYLEING */
@@ -261,6 +608,7 @@ body {
 	letter-spacing: 1px;
 	font-variant: small-caps;
 	line-height: 100px;
+
 }
 
 /* BODY STYLING */
@@ -360,7 +708,7 @@ body {
 
 
 
-}
+
 
 
 
