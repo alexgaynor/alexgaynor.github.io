@@ -345,6 +345,9 @@ body {
 	display:none;
 	margin-left:50px;
 	margin-top:-305px;
+	color:white;
+	font-size: 22px;
+	font-family: Lato;
 }
 .center-details-right {
 	width:305px;
@@ -353,7 +356,9 @@ body {
 	display:none;
 	margin-top:-305px;
 	margin-right:30px;
-
+	color:white;
+	font-size: 22px;
+	font-family: Lato;
 }
 
 

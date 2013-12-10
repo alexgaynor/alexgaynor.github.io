@@ -135,6 +135,9 @@ $(document).ready(function () {
     var mvTextR = $('#gf-details-right');
 
     var planetaryLink = $('#planetary-link');
+    planetaryLink.click(function (e) {
+        
+    });
 
     myName.click(function () {
         bod.animate({
